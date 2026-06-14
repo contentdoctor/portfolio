@@ -62,11 +62,11 @@
   .hero{padding:5.5rem 0 4.5rem;background:
       radial-gradient(120% 80% at 85% -10%, var(--peach) 0%, rgba(255,217,191,0) 55%),
       var(--white)}
-  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:3.5rem;align-items:center}
-  .hero h1{font-size:clamp(2.6rem,5.4vw,4.4rem);margin:1.2rem 0}
+  .hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:3rem;align-items:center}
+  .hero h1{font-size:clamp(2.3rem,4.5vw,3.6rem);margin:1.2rem 0;text-wrap:balance}
   .hero h1 em{font-style:normal;color:var(--orange);position:relative;white-space:nowrap}
   .hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.06em;height:.16em;background:var(--peach);z-index:-1}
-  .hero p.lede{font-size:1.12rem;color:var(--muted);max-width:34ch;margin-bottom:1.9rem}
+  .hero p.lede{font-size:1.12rem;color:var(--muted);max-width:54ch;margin-bottom:1.9rem;text-wrap:pretty}
   .hero-cta{display:flex;gap:.9rem;flex-wrap:wrap}
   .hero-meta{margin-top:2.4rem;display:flex;gap:2.2rem;flex-wrap:wrap}
   .hero-meta .stat{display:flex;flex-direction:column}
@@ -94,7 +94,7 @@
   .section{padding:5.5rem 0}
   .section.tint{background:var(--cream)}
   .section-head{max-width:42rem;margin-bottom:2.8rem}
-  .section-head h2{font-size:clamp(2rem,4vw,3rem);margin:.8rem 0 .6rem}
+  .section-head h2{font-size:clamp(2rem,4vw,3rem);margin:.8rem 0 .6rem;text-wrap:balance}
   .section-head p{color:var(--muted);font-size:1.05rem}
 
   /* ---------- DIAGNOSIS ---------- */
@@ -159,7 +159,7 @@
   .about-card .role{font-family:'JetBrains Mono';font-size:.72rem;letter-spacing:.16em;color:#FFB68F;text-transform:uppercase;position:relative}
   .about-card .nm{font-family:'Bricolage Grotesque';font-weight:800;font-size:1.5rem;margin:.3rem 0;position:relative}
   .about-card .lic{font-family:'JetBrains Mono';font-size:.68rem;color:#C9B6A8;border-top:1px dashed rgba(255,255,255,.18);margin-top:1.1rem;padding-top:1rem;position:relative}
-  .about h2{font-size:clamp(1.9rem,3.6vw,2.6rem);margin-bottom:1.1rem}
+  .about h2{font-size:clamp(1.9rem,3.6vw,2.5rem);margin-bottom:1.1rem;text-wrap:balance}
   .about p{color:var(--muted);margin-bottom:1rem;font-size:1.04rem}
   .about .sig{font-family:'Bricolage Grotesque';font-weight:700;font-size:1.2rem;color:var(--ink);font-style:italic}
 
@@ -298,8 +298,8 @@
   /* closing band */
   .closing{text-align:center}
   .closing-label{font-family:'JetBrains Mono';font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:1.1rem}
-  .closing-h{font-size:clamp(1.9rem,4.2vw,3rem);color:var(--orange);max-width:20ch;margin:0 auto .9rem;line-height:1.08;font-family:'Bricolage Grotesque';font-weight:800;letter-spacing:-.02em}
-  .closing-sub{font-size:1.18rem;color:var(--ink);max-width:32ch;margin:0 auto}
+  .closing-h{font-size:clamp(1.8rem,3.8vw,2.7rem);color:var(--orange);max-width:none;margin:0 auto .9rem;line-height:1.12;font-family:'Bricolage Grotesque';font-weight:800;letter-spacing:-.02em;text-wrap:balance}
+  .closing-sub{font-size:1.18rem;color:var(--ink);max-width:36rem;margin:0 auto;text-wrap:pretty}
   /* booking card */
   .book-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:2rem;text-align:center;backdrop-filter:blur(4px)}
   .book-ic{width:56px;height:56px;border-radius:14px;background:var(--orange);display:grid;place-items:center;font-size:1.5rem;margin:0 auto 1rem}
@@ -343,7 +343,7 @@
   <div class="wrap hero-grid">
     <div>
       <span class="eyebrow">Content strategy · Copy · Campaigns</span>
-      <h1>Good content is blood. Bad content is <em>poison.</em></h1>
+      <h1>Good content is blood.<br>Bad content is <em>poison.</em></h1>
       <p class="lede" style="margin-bottom:.55rem;font-weight:600;color:var(--ink)">One prints money. The other bores people to death.</p>
       <p class="lede">Most brands don't know which they've got. I'll tell you which — and then fix it.</p>
       <div class="hero-cta">
@@ -3039,7 +3039,7 @@
 <!-- OUTCOMES -->
 <section class="section tint" id="outcomes">
   <div class="wrap">
-    <div class="section-head reveal" style="margin:0 auto 2.8rem;text-align:center">
+    <div class="section-head reveal" style="margin:0 auto 2.8rem;text-align:center;max-width:58rem">
       <span class="eyebrow" style="justify-content:center">Testimonials</span>
       <h2>Healthy brands don't stay quiet</h2>
     </div>
